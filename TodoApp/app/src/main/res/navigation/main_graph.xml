@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/list_fragment">
+
+    <fragment
+        android:id="@+id/list_fragment"
+        android:name="com.codetron.todoapp.ui.list.ListFragment"
+        android:label="@string/title_list"
+        tools:layout="@layout/fragment_list">
+
+        <action
+            android:id="@+id/action_list_to_add_update_fragment"
+            app:destination="@id/add_update_fragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/add_update_fragment"
+        android:name="com.codetron.todoapp.ui.addupdate.AddUpdateFragment"
+        android:label="{mode}"
+        tools:layout="@layout/fragment_add_update">
+
+        <argument
+            android:name="mode"
+            app:argType="com.codetron.todoapp.data.model.Mode" />
+
+        <argument
+            app:nullable="true"
+            android:name="toDo"
+            app:argType="com.codetron.todoapp.data.model.ToDoData"
+            android:defaultValue="@null" />
+    </fragment>
+
+</navigation>

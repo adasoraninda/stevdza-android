@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Todo App</string>
+    <string name="no_data">No Data</string>
+    <string name="title_list">ToDo List</string>
+    <string name="title_add">Add</string>
+    <string name="title_update">Update</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="search">Search</string>
+    <string name="sort_by">Sort By</string>
+    <string name="delete_all">Delete All</string>
+    <string name="priority_high">Priority High</string>
+    <string name="priority_low">Priority Low</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="default_value">Empty</string>
+    <string name="success_add_todo">Successfully add ToDo</string>
+    <string name="success_update_todo">Successfully update ToDo</string>
+    <string name="warning_input">Please fill out all fields</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="alert_delete_all_title">Delete all data?</string>
+    <string name="alert_delete_all_message">Are you sure you want to delete all data?</string>
+    <string name="alert_delete_all_success">Successfully delete all data</string>
+
+    <string name="alert_delete_title">Delete \'%s\' ?</string>
+    <string name="alert_delete_message">Are you sure you want delete \'%s\'</string>
+    <string name="alert_delete_success">Successfully delete \'%s\'</string>
+
+    <string name="snackbar_delete_to_do">Deleted \'%s\'</string>
+    <string name="snackbar_success_restore_to_do">Successfully save \'%s\'</string>
+    <string name="undo">Undo</string>
+
+    <string-array name="priorities">
+        <item>High Priority</item>
+        <item>Medium Priority</item>
+        <item>Low Priority</item>
+    </string-array>
+</resources>
